@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ruslan Safiullin](https://up.htmlacademy.ru/htmlcss/30/user/784163).
-* Наставник: Сергей Харлов.
+* Наставник: [Сергей Харлов](https://up.htmlacademy.ru/htmlcss/30/user/52016).
 
 ---
 
