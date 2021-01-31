@@ -11,10 +11,10 @@
 	  			<img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's">
 	  		</a>
 	  		<ul>
-	  			<li>Студия</li>
-	  			<li>Клиенты</li>
-	  			<li>Магазин</li>
-	  			<li>Контакты</li>
+	  			<li><a href="#"><Студия</a></li>
+	  			<li><a href="#"><Клиенты</a></li> 
+	  			<li><a href="inner.html">Магазин</a></li>
+	  			<li><a href="#"><Контакты</a></li>
 	  		</ul>
 	  		<ul>
 	  			<li>Корзина</li>
@@ -22,12 +22,12 @@
   		</nav>
   	</header>
   	<main>
-  		<h1 class="hidden">Дизайн студия Nerd's</h1>
+  		<h1 class="visually-hidden">Дизайн студия Nerd's</h1>
   		<section class="advantages">
   			<h2>Преимущества</h2>
-  				<p class="bigtxt">Долго, дорого, скрупулезно.</p>
-  				<p class="littletxt">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  				<a href="#" class="redbutton">УЗНАТЬ БОЛЬШЕ</a>
+  				<p class="text-fontsize-55">Долго, дорого, скрупулезно.</p>
+  				<p class="text-fontsize-16">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  				<a href="#" class="redbutton">Узнать больше</a>
   				<img src="#" alt="летящие айфоны">
   		</section>
   		<section class="products">
@@ -55,7 +55,7 @@
   		</section>
   		<section>
   			<h2>О нас</h2>
-  			<p class="bigtxt">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+  			<p class="text-fontsize-45">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
   			<p class="littletxt">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
   			<h3>Выполняем заказы на разработку:</h3>
   			<ul>
@@ -67,9 +67,9 @@
   				<img src="#" alt="Цветное лого">
   				<h3>с 2004 года Любим точность во всем:</h3>
   				<ul>
-  					<li><p><span class="number">146</span><span class="percent">%</span>Уровеньсамоотдачи</p></li>
-  					<li><p><span class="number">100</span><span class="percent">%</span>Соблюдение сроков</p></li>
-  					<li><p><span class="number">50</span><span class="percent">%</span>Минимальная предоплата</p></li>
+  					<li><p><span class="number">146</span><sup class="percent">%</sup>Уровень самоотдачи</p></li>
+  					<li><p><span class="number">100</span><sup class="percent">%</sup>Соблюдение сроков</p></li>
+  					<li><p><span class="number">50</span><sup class="percent">%</sup>Минимальная предоплата</p></li>
   				</ul>
   			</div>
   		</section>
@@ -81,15 +81,34 @@
   				<li><img src="#" alt="Mishka"></li>
   			</ul>
   		</section>
+  		<footer class="map">
+  			<h2>Как нас найти</h2>
+  			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга"></p>
+  			<h2>Как с нами связаться</h2>
+  			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="+78122757575"></a>+7 (812) 275-75-75</address>
+  			<button type="button">Напишите нам</button>
+  		</footer>
   	</main>
     <footer>
     	<ul>
-	  		<li><a href="vk.com"><img src="img/vk-icon.svg" alt="vk.com"></a></li>
-	  		<li><a href="facebook.com"><img src="img/fb-icon.svg" alt="facebook.com"></a></li>
-	  		<li><a href="instagram.com"><img src="img/insta-icon.svg" alt="instagram.com"></a></li>
+	  		<li><a href="https://vk.com"><img src="img/vk-icon.svg" alt="vk.com"></a></li>
+	  		<li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="facebook.com"></a></li>
+	  		<li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="instagram.com"></a></li>
 	  	</ul>
 	  	<p>Давайте дружить, это выгодно!</p>
 	  	<p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <section>
+    	<h2>Форма для отправки обратно связи</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+    	<fieldset>
+	    	<legend>Напишите нам</legend>
+		    	<p><label>Ваше имя:<input type="text" name="customername" placeholder="Имя Фамилия"></label></p>
+		    	<p><label>Ваш email:<input type="email" name="email" placeholder="email@exemple.com"></label></p>
+		    	<p><label>Текст письма:<input type="text" name="letter" placeholder="В свободной форме"></label></p>
+	    	</fieldset>
+    </form>
+    <p><button type="button">Отправить</button></p>
+    </section>
   </body>
 </html>
