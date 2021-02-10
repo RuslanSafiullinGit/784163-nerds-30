@@ -1,114 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="Favicon/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
-	  	<nav>
+	  	<nav class="main-navigation">
 	  		<a href="#">
-	  			<img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's">
+	  			<img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160px" height="65px">
 	  		</a>
-	  		<ul>
-	  			<li><a href="#"><Студия</a></li>
-	  			<li><a href="#"><Клиенты</a></li> 
-	  			<li><a href="inner.html">Магазин</a></li>
-	  			<li><a href="#"><Контакты</a></li>
+	  		<ul class="site-navigation list-global">
+	  			<li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+	  			<li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+	  			<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+	  			<li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
 	  		</ul>
-	  		<ul>
-	  			<li>Корзина</li>
+	  		<ul class="site-navigation list-global">
+	  			<li><a class="site-navigation-link" href="blank.html">Корзина</a></li>
 	  		</ul>
   		</nav>
   	</header>
   	<main>
-  		<h1 class="visually-hidden">Дизайн студия Nerd's</h1>
-  		<section class="advantages">
-  			<h2>Преимущества</h2>
-  				<p class="text-fontsize-55">Долго, дорого, скрупулезно.</p>
-  				<p class="text-fontsize-16">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  				<a href="#" class="redbutton">Узнать больше</a>
-  				<img src="#" alt="летящие айфоны">
+  		<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
+  		<section >
+  			<h2 class="visually-hidden">Преимущества</h2>
+  				<p class="slogan">Долго, дорого, скрупулезно.</p>
+  				<p >Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  				<a href="#">Узнать больше</a>
+  				<img src="img/slide-picture.jpg" alt="летящие айфоны" width="760px" height="431px">
   		</section>
   		<section class="products">
-  			<h2>Что мы создаём</h2>
-  			<ul>
-  				<li>
-  					<h3>Веб-сайты</h3>
-  					<img src="img/advantage-picture-red.png">
+  			<h2 class="visually-hidden">Что мы создаём</h2>
+  			<ul class="list-global">
+  				<li class="products-list">
+  					<h3 class="products-list-title">Веб-сайты</h3>
+  					<img src="img/advantage-picture-red.png" alt="ноутбук" width="300px" height="146px">
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<a href="#">Заказать</a>
   				</li>
-  				<li>
-  					<h3>Приложения</h3>
-  					<img src="img/advantage-picture-green.png">
+  				<li class="products-list">
+  					<h3 class="products-list-title">Приложения</h3>
+  					<img src="img/advantage-picture-green.png" alt="телефон" width="300px" height="146px">
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
   					<a href="#">Заказать</a>
   				</li>
-  				<li>
-  					<h3>Презентации</h3>
-  					<img src="img/advantage-picture-yellow.png">
+  				<li class="products-list">
+  					<h3 class="products-list-title">Презентации</h3>
+  					<img src="img/advantage-picture-yellow.png" alt="экран" width="300px" height="146px">
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
   					<a href="#">Заказать</a>
   				</li>
   			</ul>
   		</section>
-  		<section>
-  			<h2>О нас</h2>
-  			<p class="text-fontsize-45">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-  			<p class="littletxt">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-  			<h3>Выполняем заказы на разработку:</h3>
-  			<ul>
+  		<section class="advertise">
+  			<h2 class="visually-hidden">О нас</h2>
+  			<p class="advertise-subject">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+  			<p class="advertise-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+  			<h3 class="advertise-list-headline">Выполняем заказы на разработку:</h3>
+  			<ul class="advertise-list list-global">
   				<li>Веб-сайтов любой сложности</li>
   				<li>Мобильных приложений для iOS и Android</li>
   				<li>Слайдшоу и видео для корпоративных презентаций</li>
   			</ul>
   			<div>
-  				<img src="img/nerds-picture.jpg" alt="Цветное лого">
+  				<img src="img/nerds-picture.jpg" alt="Цветное лого Нёрдс" width="360px" height="208px" >
   				<h3>с 2004 года Любим точность во всем:</h3>
-  				<ul>
-  					<li><p><span class="number">146</span><sup class="percent">%</sup>Уровень самоотдачи</p></li>
-  					<li><p><span class="number">100</span><sup class="percent">%</sup>Соблюдение сроков</p></li>
-  					<li><p><span class="number">50</span><sup class="percent">%</sup>Минимальная предоплата</p></li>
+  				<ul class="list-global">
+  					<li><p><span >146</span><sup >%</sup>Уровень самоотдачи</p></li>
+  					<li><p><span>100</span><sup>%</sup>Соблюдение сроков</p></li>
+  					<li><p><span>50</span><sup>%</sup>Минимальная предоплата</p></li>
   				</ul>
   			</div>
   		</section>
-  		<section class="partners">
-  			<ul>
-  				<li><img src="img/htmlacademy-logo.jpg" alt="HTML Academy"></li>
-  				<li><img src="img/borodinski-logo.jpg" alt="Barbershop Borodinski"></li>
-  				<li><img src="img/pink-logo.jpg" alt="Pink"></li>
-  				<li><img src="img/mishka-logo.jpg" alt="Mishka"></li>
+  		<section>
+  			<ul class="list-global">
+  				<li><img src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="199px" height="67.82px"></li>
+  				<li><img src="img/borodinski-logo.jpg" alt="Barbershop Borodinski" width="209px" height="90px"></li>
+  				<li><img src="img/pink-logo.jpg" alt="Pink" width="185px" height="52px"></li>
+  				<li><img src="img/mishka-logo.jpg" alt="Mishka" width="173px" height="84px"></li>
   			</ul>
   		</section>
   	</main>
-  	<footer class="map">
-  			<h2>Как нас найти</h2>
-  			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга"></p>
-  			<h2>Как с нами связаться</h2>
-  			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="+78122757575"></a>+7 (812) 275-75-75</address>
+  	<footer>
+  			<h2 class="visually-hidden">Как нас найти</h2>
+  			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="1440px" height="416px"></p>
+  			<h2 class="visually-hidden">Как с нами связаться</h2>
+        <h3 class="address-heading">nёrds design studio</h3>
+  			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></address>
   			<button type="button">Напишите нам</button>
   	</footer>
     <footer>
     	<ul>
-	  		<li><a href="https://vk.com"><img src="img/svg-nerds/vk-icon.svg" alt="vk.com"></a></li>
-	  		<li><a href="https://facebook.com"><img src="img/svg-nerds/fb-icon.svg" alt="facebook.com"></a></li>
-	  		<li><a href="https://instagram.com"><img src="img/svg-nerds/insta-icon.svg" alt="instagram.com"></a></li>
+	  		<li><a href="https://vk.com"><img src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26.01px" height="15px"></a></li>
+	  		<li><a href="https://facebook.com"><img src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12px" height="22px"></a></li>
+	  		<li><a href="https://instagram.com"><img src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21px" height="21px"></a></li>
 	  	</ul>
-	  	<p>Давайте дружить, это выгодно!</p>
-	  	<p>Скидка 10% для друзей из социальных сетей.</p>
+	  	<p class="footer-proposal">Давайте дружить, это выгодно!</p>
+	  	<p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <section>
-    	<h2>Форма для отправки обратно связи</h2>
+    	<h2 class="visually-hidden">Форма для отправки обратно связи</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
     	<fieldset>
 	    	<legend>Напишите нам</legend>
 		    	<p><label>Ваше имя:<input type="text" name="customername" placeholder="Имя Фамилия"></label></p>
-		    	<p><label>Ваш email:<input type="email" name="email" placeholder="email@exemple.com"></label></p>
+		    	<p><label>Ваш email:<input type="email" name="email" placeholder="email@example.com"></label></p>
 		    	<p><label>Текст письма:<input type="text" name="letter" placeholder="В свободной форме"></label></p>
-	    	</fieldset>
+	    </fieldset>
     </form>
     <p><button type="button">Отправить</button></p>
     </section>
