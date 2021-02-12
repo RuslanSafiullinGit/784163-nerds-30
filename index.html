@@ -33,7 +33,7 @@
   			<h2 class="visually-hidden">Преимущества</h2>
   				<p class="slogan">Долго, дорого, скрупулезно.</p>
   				<p >Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  				<a href="#">Узнать больше</a>
+  				<a class="button" href="#">Узнать больше</a>
   				<img src="img/slide-picture.jpg" alt="летящие айфоны" width="760px" height="431px">
   		</section>
   		<section class="products">
@@ -43,19 +43,19 @@
   					<h3 class="products-list-title">Веб-сайты</h3>
   					<img src="img/advantage-picture-red.png" alt="ноутбук" width="300px" height="146px">
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a href="#">Заказать</a>
+  					<a class="button" href="#">Заказать</a>
   				</li>
   				<li class="products-list">
   					<h3 class="products-list-title">Приложения</h3>
   					<img src="img/advantage-picture-green.png" alt="телефон" width="300px" height="146px">
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a href="#">Заказать</a>
+  					<a class="button" href="#">Заказать</a>
   				</li>
   				<li class="products-list">
   					<h3 class="products-list-title">Презентации</h3>
   					<img src="img/advantage-picture-yellow.png" alt="экран" width="300px" height="146px">
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a href="#">Заказать</a>
+  					<a class="button" href="#">Заказать</a>
   				</li>
   			</ul>
   		</section>
@@ -79,12 +79,12 @@
   				</ul>
   			</div>
   		</section>
-  		<section>
+  		<section class="partners">
   			<ul class="list-global">
-  				<li><img src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="199px" height="67.82px"></li>
-  				<li><img src="img/borodinski-logo.jpg" alt="Barbershop Borodinski" width="209px" height="90px"></li>
-  				<li><img src="img/pink-logo.jpg" alt="Pink" width="185px" height="52px"></li>
-  				<li><img src="img/mishka-logo.jpg" alt="Mishka" width="173px" height="84px"></li>
+  				<li><img class="partners-logo" src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="199px" height="67.82px"></li>
+  				<li><img class="partners-logo" src="img/borodinski-logo.jpg" alt="Barbershop Borodinski" width="209px" height="90px"></li>
+  				<li><img class="partners-logo" src="img/pink-logo.jpg" alt="Pink" width="185px" height="52px"></li>
+  				<li><img class="partners-logo" src="img/mishka-logo.jpg" alt="Mishka" width="173px" height="84px"></li>
   			</ul>
   		</section>
   	</main>
@@ -94,28 +94,28 @@
   			<h2 class="visually-hidden">Как с нами связаться</h2>
         <h3 class="address-heading">nёrds design studio</h3>
   			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></address>
-  			<button type="button">Напишите нам</button>
+  			<button class="button" type="button">Напишите нам</button>
   	</footer>
     <footer>
-    	<ul>
-	  		<li><a href="https://vk.com"><img src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26.01px" height="15px"></a></li>
-	  		<li><a href="https://facebook.com"><img src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12px" height="22px"></a></li>
-	  		<li><a href="https://instagram.com"><img src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21px" height="21px"></a></li>
+    	<ul class="list-global social-button">
+	  		<li ><a class="social-button-item" href="https://vk.com"><img class="social-button-item" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26.01px" height="15px"></a></li>
+	  		<li ><a class="social-button-item" href="https://facebook.com"><img  src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12px" height="22px"></a></li>
+	  		<li ><a class="social-button-item" href="https://instagram.com"><img  src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21px" height="21px"></a></li>
 	  	</ul>
 	  	<p class="footer-proposal">Давайте дружить, это выгодно!</p>
 	  	<p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <section>
     	<h2 class="visually-hidden">Форма для отправки обратно связи</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal" action="https://echo.htmlacademy.ru" method="post">
     	<fieldset>
 	    	<legend>Напишите нам</legend>
-		    	<p><label>Ваше имя:<input type="text" name="customername" placeholder="Имя Фамилия"></label></p>
-		    	<p><label>Ваш email:<input type="email" name="email" placeholder="email@example.com"></label></p>
-		    	<p><label>Текст письма:<input type="text" name="letter" placeholder="В свободной форме"></label></p>
+		    	<p><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия"></label></p>
+		    	<p><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
+		    	<p><label class="modal-label">Текст письма:<input class="modal-feedback-form" type="text" name="letter" placeholder="В свободной форме"></label></p>
+          <button class="button" type="button">Отправить</button>
 	    </fieldset>
     </form>
-    <p><button type="button">Отправить</button></p>
     </section>
   </body>
 </html>

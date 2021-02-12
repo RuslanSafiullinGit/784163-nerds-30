@@ -4,6 +4,7 @@
    --basic-black: #283136;
    --basic-extra-black: #000000;
    --basic-grey: #EEEEEE;
+   --extra-grey: #E1E1E1;
    --basic-white: #FFFFFF;
    --link-dormancy: #000000;
    --link-hover: #FB565A;
@@ -12,6 +13,12 @@
    --button-red-dormancy: #FB565A;
    --button-red-hover: #E74246;
    --button-red-click: #D7373B;
+   --button-control-hover: #DFDFDF;
+   --button-control-click: #D5D5D5;
+   --button-control-focus: #DBDBDB;
+   --feedback-form-dormancy: #D7DCDE;
+   --feedback-form-hover: #B4B9BB;
+   --feedback-form-click: #000000;
 }
 
 /* Global */
@@ -33,7 +40,17 @@ img {
 .list-global {
   list-style: none;
 }
-
+.button {
+  background-color: var(--button-red-dormancy);
+  border-radius: 3px;
+}
+.button:hover {
+  background-color: var(--button-red-hover);
+}
+.button:active {
+  background-color: var(--button-red-click);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
 /* main-navigation */
 
 .site-navigation-link {
@@ -80,6 +97,29 @@ img {
   font-weight: 500;
 }
 
+.partners-logo {
+
+}
+
+/* catalog */
+.control {
+  color: var(--basic-extra-black);
+  background-color: var(--basic-grey);
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.control:hover {
+  background-color: var(--button-control-hover);
+}
+.control:active {
+  background-color: var(--button-control-click);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
+}
+.control-disable {
+  background-color: var(--button-control-focus);
+}
+
 /* footer */
 .footer-proposal {
   font-size: 36px;
@@ -90,6 +130,34 @@ img {
   font-size: 16px;
   line-height: 22px;
 }
+.social-button-item {
+  background-color: var(--basic-grey);
+  border: solid 5px var(--basic-grey);
+}
+.social-button-logo {
+  color: var(--basic-white);
+}
+.modal-label {
+  color: var(--basic-extra-black);
+  font-weight: 700;
+  size: 16px;
+  line-height: 18px;
+}
+
+.modal-feedback-form {
+  color:  var(--feedback-form-text);
+  background-color: var(--feedback-form-dormancy);
+  border-radius: 3px;
+}
+
+.modal-feedback-form:hover {
+  background-color: var(--feedback-form-hover);
+}
+
+.modal-feedback-form:active {
+  background-color: var(--feedback-form-click);
+}
+
 
 /* additional */
 .visually-hidden {
@@ -99,3 +167,11 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+/* 1) как убрать рамки у кнопок при нажатии?
+   2) фон для социальных кнопокй задавать контейнеру? А какому?
+   3) в стайлгайде на всх 3-ех состояниях кнопок цвет текста не меняется в настройках, а визуальо меняется,
+   я так понимаю что это из-за прозрачности. Если да, то как её вычислить, потому-что в макете не указано?
+   4) как быть с лого партнеров, они тоже должны менять цвет при наведении,
+   это значит нужно использовать изображения SVG, чтобы можно было менять цвет фона или прозрачность?
+   Также, если у лого при наведения меняется прозрачность, то как её узнать? В макете фигмы не нашел.   */
