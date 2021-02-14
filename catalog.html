@@ -32,42 +32,42 @@
   		<section class="filter">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
   			<form method="get" action="https://echo.htmlacademy.ru">
-  				<fieldset>
+  				<fieldset class="filter">
   					<legend class="filter-legend">Стоимость:</legend>
   					<input type="range" min="0" max="20000" step="1" value="15000" name="price">
   				</fieldset>
-  				<fieldset>
+  				<fieldset class="filter">
   					<legend class="filter-legend">Сетка:</legend>
-  					<input type="radio" id="filter-adaptive"  name="net-type" value="adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
-  					<input type="radio" id="filter-fixed" name="net-type" value="fixed">
-            <label for="filter-fixed">Фиксированная</label>
-  					<input type="radio" id="filter-rubbery" name="net-type" value="rubbery">
-            <label for="filter-rubbery">Резиновая</label>
+  					<input class="filter-input" type="radio" id="filter-adaptive"  name="net-type" value="adaptive" checked>
+            <label class="filter-label" for="filter-adaptive">Адаптивная</label>
+  					<input class="filter-input" type="radio" id="filter-fixed" name="net-type" value="fixed">
+            <label class="filter-label" for="filter-fixed">Фиксированная</label>
+  					<input class="filter-input" type="radio" id="filter-rubbery" name="net-type" value="rubbery">
+            <label class="filter-label" for="filter-rubbery">Резиновая</label>
   				</fieldset>
-  				<fieldset>
+  				<fieldset class="filter">
             <legend class="filter-legend">Особенности:</legend>
-  					<input type="checkbox" name="slider" id="filter-slider" checked>
-  					<label for="filter-slider">Слайдер</label>
-  					<input type="checkbox" name="advantages-block" id="filter-advantages-block">
-  					<label for="filter-advantages-block">Блок преимуществ</label>
-  					<input type="checkbox" name="news" id="filter-news" checked><label for="filter-news">Новости</label>
-  					<input type="checkbox" name="gallery" id="filter-gallery"><label for="filter-gallery">Галерея</label>
-  					<input type="checkbox" name="basket" id="filter-basket"><label for="filter-basket">Корзина</label>
+  					<input class="filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+  					<label class="filter-label" for="filter-slider">Слайдер</label>
+  					<input class="filter-input" type="checkbox" name="advantages-block" id="filter-advantages-block">
+  					<label class="filter-label" for="filter-advantages-block">Блок преимуществ</label>
+  					<input class="filter-input" type="checkbox" name="news" id="filter-news" checked><label class="filter-label" for="filter-news">Новости</label>
+  					<input class="filter-input" type="checkbox" name="gallery" id="filter-gallery"><label class="filter-label" for="filter-gallery">Галерея</label>
+  					<input class="filter-input" type="checkbox" name="basket" id="filter-basket"><label class="filter-label" for="filter-basket">Корзина</label>
   				</fieldset>
   				<button class="control" type="submit">Показать</button>
   			</form>
   			<form>
-  				<fieldset>
+  				<fieldset class="filter">
   					<legend class="filter-legend">Сортировать:</legend>
   						<div>
-                <input class="control" type="button" id="filter-price" name="sorting" value="По цене">
-    						<input class="control" type="button" id="filter-type" name="sorting" value="По типу">
-    						<input class="control" type="button" id="filter-name" name="sorting" value="По названию">
+                <input class="control control-order" type="button" id="filter-price" name="sorting" value="По цене">
+    						<input class="control control-order" type="button" id="filter-type" name="sorting" value="По типу">
+    						<input class="control control-order" type="button" id="filter-name" name="sorting" value="По названию">
   					  </div>
               <div>
-    						<input class="control" type="button" id="filter-descend" name="descend" value="&#9660">
-    						<input class="control" type="button" id="filter-descend" name="ascend" value="&#9650">
+    						<input class="control control-order" type="button" id="filter-descend" name="descend" value="&#9660">
+    						<input class="control control-order" type="button" id="filter-ascend" name="ascend" value="&#9650">
               </div>
   				</fieldset>
   			</form>
@@ -123,16 +123,16 @@
   	</footer>
     <footer>
     	<ul class="list-global social-button">
-	  		<li class="social-button-item">
-          <a href="https://vk.com">
+	  		<li>
+          <a class="social-button-item" href="https://vk.com">
             <img class="social-button-logo" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26.01px" height="15px"></a>
         </li>
-	  		<li class="social-button-item">
-          <a href="https://facebook.com">
+	  		<li>
+          <a class="social-button-item" href="https://facebook.com">
             <img class="social-button-logo" src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12px" height="22px"></a>
          </li>
-	  		<li class="social-button-item">
-          <a href="https://instagram.com">
+	  		<li>
+          <a class="social-button-item" href="https://instagram.com">
             <img class="social-button-logo" src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21px" height="21px"></a>
         </li>
 	  	</ul>
