@@ -10,35 +10,40 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  	<header class="main-header">
-	  	<nav class="main-navigation">
-	  		<a href="#">
-	  			<img class="logo" src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
-	  		</a>
-	  		<ul class="site-navigation list-global">
-	  			<li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-	  			<li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-	  			<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-	  			<li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-	  		</ul>
-	  		<ul class="site-navigation list-global">
-	  			<li><a class="site-navigation-link" href="blank.html">Корзина</a></li>
-	  		</ul>
-  		</nav>
+  <body class="lg">
+  	<header class="main-header lg-header">
+      <div class="container">
+        <nav class="lg-main-navigation">
+          <a href="#">
+            <img class="logo" src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
+          </a>
+          <ul class="site-navigation list-global">
+            <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
+          </ul>
+          <ul class="site-navigation list-global">
+            <li><a class="site-navigation-link" href="blank.html">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
   	</header>
-  	<main>
+  	<main class="lg-main">
+      <div class="container">
   		<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
-  		<section >
+  		<section class="advantages">
   			<h2 class="visually-hidden">Преимущества</h2>
+        <div>
   				<p class="slogan">Долго, дорого, скрупулезно.</p>
-  				<p >Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="button" href="#"><span>Узнать больше</span></a>
+  				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button" href="#"><span>Узнать больше</span></a>
+        </div>
   				<img src="img/slide-picture.jpg" alt="летящие айфоны" width="760" height="431">
   		</section>
-  		<section class="products">
+  		<section>
   			<h2 class="visually-hidden">Что мы создаём</h2>
-  			<ul class="list-global">
+  			<ul class="list-global products">
   				<li class="products-list">
   					<h3 class="products-list-title">Веб-сайты</h3>
   					<img src="img/advantage-picture-red.png" alt="ноутбук" width="300" height="146">
@@ -61,14 +66,16 @@
   		</section>
   		<section class="advertise">
   			<h2 class="visually-hidden">О нас</h2>
-  			<p class="advertise-subject">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-  			<p class="advertise-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-  			<h3 class="advertise-list-headline">Выполняем заказы на разработку:</h3>
-  			<ul class="advertise-list list-global">
-  				<li>Веб-сайтов любой сложности</li>
-  				<li>Мобильных приложений для iOS и Android</li>
-  				<li>Слайдшоу и видео для корпоративных презентаций</li>
-  			</ul>
+        <div>
+          <p class="advertise-subject">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="advertise-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="advertise-list-headline">Выполняем заказы на разработку:</h3>
+          <ul class="advertise-list list-global">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
   			<div>
   				<img src="img/nerds-picture.jpg" alt="Цветное лого Нёрдс" width="360" height="208" >
   				<h3>с 2004 года Любим точность во всем:</h3>
@@ -80,49 +87,60 @@
   			</div>
   		</section>
   		<section class="partners">
-        <h2>Наши партнёры</h2>
-  			<ul class="list-global">
+        <h2 class="visually-hidden">Наши партнёры</h2>
+  			<ul class="list-global partners-list">
   				<li><img class="partners-logo" src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="199" height="68"></li>
   				<li><img class="partners-logo" src="img/borodinski-logo.jpg" alt="Barbershop Borodinski" width="209" height="90"></li>
   				<li><img class="partners-logo" src="img/pink-logo.jpg" alt="Pink" width="185" height="52"></li>
   				<li><img class="partners-logo" src="img/mishka-logo.jpg" alt="Mishka" width="173" height="84"></li>
   			</ul>
   		</section>
+      </div>
   	</main>
-  	<footer>
+  	<footer class="lg-footer-map">
+      <div class="container-map">
   			<h2 class="visually-hidden">Как нас найти</h2>
   			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="1440" height="416"></p>
   			<h2 class="visually-hidden">Как с нами связаться</h2>
         <h3 class="address-heading">nёrds design studio</h3>
   			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></address>
   			<button class="button" type="button">Напишите нам</button>
+      </div>
   	</footer>
-    <footer>
-    	<ul class="list-global social-button">
-	  		<li class="social-button-item">
-          <a  href="https://vk.com"><img class="social-button-logo" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26" height="15"></a>
-        </li>
-	  		<li class="social-button-item">
-          <a  href="https://facebook.com"><img class="social-button-logo" src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12" height="22"></a>
-        </li>
-	  		<li class="social-button-item">
-          <a  href="https://instagram.com"><img class="social-button-logo" src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21" height="21"></a>
-        </li>
-	  	</ul>
-	  	<p class="footer-proposal">Давайте дружить, это выгодно!</p>
-	  	<p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
+    <footer class="lg-footer-social">
+      <div class="container">
+        <div class="lg-footer-social-box">
+          <ul class="list-global social-button">
+            <li class="social-button-item">
+              <a  href="https://vk.com"><img class="social-button-logo" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26" height="15"></a>
+            </li>
+            <li class="social-button-item">
+              <a  href="https://facebook.com"><img class="social-button-logo" src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12" height="22"></a>
+            </li>
+            <li class="social-button-item">
+              <a  href="https://instagram.com"><img class="social-button-logo" src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21" height="21"></a>
+            </li>
+          </ul>
+          <div class="footer-proposal-box">
+            <p class="footer-proposal">Давайте дружить, это выгодно!</p>
+            <p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          </div>
+      </div>
     </footer>
-    <section>
-    	<h2 class="visually-hidden">Форма для отправки обратно связи</h2>
-    <form class="modal" action="https://echo.htmlacademy.ru" method="post">
-    	<fieldset>
-	    	<legend>Напишите нам</legend>
-		    	<p><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия"></label></p>
-		    	<p><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
-		    	<p><label class="modal-label">Текст письма:<input class="modal-feedback-form" type="text" name="letter" placeholder="В свободной форме"></label></p>
-          <button class="button" type="button">Отправить</button>
-	    </fieldset>
-    </form>
+    <section class="lg-feedback">
+      <div class="container">
+        <h2 class="visually-hidden">Форма для отправки обратной связи</h2>
+          <form class="modal" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Напишите нам</legend>
+                <p><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия"></label></p>
+                <p><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
+                <p><label class="modal-label">Текст письма:<input class="modal-feedback-form" type="text" name="letter" placeholder="В свободной форме"></label></p>
+                <button class="button" type="button">Отправить</button>
+            </fieldset>
+          </form>
+      </div>
     </section>
   </body>
 </html>

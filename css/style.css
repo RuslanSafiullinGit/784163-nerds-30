@@ -224,7 +224,98 @@ img {
   opacity: 1;
 }
 
+/* grid */
 
+.container {
+  width: 1157px;
+  margin: 0 auto;
+  min-width: 1157px;
+}
+.container-map {
+  width: 1440px;
+  margin: 0 auto;
+  min-width: 1440px;
+}
+.lg {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer-map"
+    "footer-social"
+    "feedback";
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    114px
+    1fr
+    416px
+    217px
+    590px;
+  gap: 20px;
+  min-height: 100vh;
+}
+.lg-header {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+  grid-area: header;
+}
+.lg-main {
+  outline: 5px solid rgba(110, 0, 200, 0.7);
+  outline-offset: -5px;
+  grid-area: main;
+}
+.lg-footer-map {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+  grid-area: footer-map;
+}
+.lg-footer-social {
+  outline: 5px solid rgba(0, 200, 49, 0.7);
+  outline-offset: -5px;
+  grid-area: footer-social;
+}
+.lg-feedback {
+  outline: 5px solid rgba(0, 200, 49, 0.7);
+  outline-offset: -5px;
+  grid-area: feedback;
+  margin-top: 50px;
+}
+.advantages {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.advertise {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.lg-footer-social-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.lg-main-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+*/
+.feedback-fieldset {
+  min-width: 1157px;
+}
 
 /* additional */
 .visually-hidden {
@@ -235,23 +326,10 @@ img {
   margin: -1px;
 }
 
-/* 1) как убрать рамки у кнопок при нажатии?
-   2) фон для социальных кнопокй задавать контейнеру? А какому?
-   3) в стайлгайде на всх 3-ех состояниях кнопок цвет текста не меняется в настройках, а визуальо меняется,
-   я так понимаю что это из-за прозрачности. Если да, то как её вычислить, потому-что в макете не указано?
-   4) как быть с лого партнеров, они тоже должны менять цвет при наведении,
-   это значит нужно использовать изображения SVG, чтобы можно было менять цвет фона или прозрачность?
-   Также, если у лого при наведения меняется прозрачность, то как её узнать? В макете фигмы не нашел.   */
-
 /*
-1) лого социальный сетей выпадает из родителя. Я отцентровал с помощью display: block. Но картинки встали по центру только в горизонтальной плоскости. По вертикали по прежнему вверху.
-   Я даже попробовал задать border, думая, что иконки тогда не будут уползать наверх, но и это не сработало.
-   Не могу вспомнить из-за чего это может быть. И правильно ли вообще центровать с помощью display: block? Ведь дальше мне, наверняка, нужно будет строить сетку с помощью флексов или гридов.
-   2) фильтры которые "по цене" - как сделать так, что бы они выглядели как текст, убрать type=button? Если так, то какой type выбрать?
-   3) стрелочки вверх вниз в "сортировать" я сделал с помощью текста, а не картинки из макета. Взять все таки из макета или оставить и потом стилизовать?
- */
+    1) Не понятно, почему картинка карты не занимает всю ширину родителя, а идёт в общем потоке вместе.
+       Может быть это из-за размера грида?
+    2) Fieldset почему-то ужался меньше чем на 1157px, хотя я даже явно задал min-width.
+    3) Fieldset почему-то залез на footer, не понимаю почему и как это исправить.
 
-/* 1) input сменить на button
-   2) переименовать vector в favicon
-   3) display: inline-block. Убрать фон и рамки.
  */
