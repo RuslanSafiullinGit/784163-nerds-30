@@ -255,28 +255,18 @@ img {
   min-height: 100vh;
 }
 .lg-header {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
   grid-area: header;
 }
 .lg-main {
-  outline: 5px solid rgba(110, 0, 200, 0.7);
-  outline-offset: -5px;
   grid-area: main;
 }
 .lg-footer-map {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
   grid-area: footer-map;
 }
 .lg-footer-social {
-  outline: 5px solid rgba(0, 200, 49, 0.7);
-  outline-offset: -5px;
   grid-area: footer-social;
 }
 .lg-feedback {
-  outline: 5px solid rgba(0, 200, 49, 0.7);
-  outline-offset: -5px;
   grid-area: feedback;
   margin-top: 50px;
 }
