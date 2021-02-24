@@ -31,41 +31,41 @@
   	</header>
   	<main class="lg-main">
       <div class="container">
-  		<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
+  		<!--<h1 class="visually-hidden">Дизайн студия Нёрдс</h1>-->
   		<section class="advantages">
-  			<h2 class="visually-hidden">Преимущества</h2>
+  			<!--<h2 class="visually-hidden">Преимущества</h2>-->
         <div>
   				<p class="slogan">Долго, дорого, скрупулезно.</p>
   				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="#"><span>Узнать больше</span></a>
+          <a class="button button-advantages" href="#"><span>Узнать больше</span></a>
         </div>
   				<img src="img/slide-picture.jpg" alt="летящие айфоны" width="760" height="431">
   		</section>
-  		<section>
-  			<h2 class="visually-hidden">Что мы создаём</h2>
+  		<section class="products-main">
+  			<!--<h2 class="visually-hidden">Что мы создаём</h2>-->
   			<ul class="list-global products">
-  				<li class="products-list">
+  				<li class="products-list website-item">
   					<h3 class="products-list-title">Веб-сайты</h3>
   					<img src="img/advantage-picture-red.png" alt="ноутбук" width="300" height="146">
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="#"><span>Заказать</span></a>
+            <a class="button button-order order-website" href="#"><span>Заказать</span></a>
   				</li>
-  				<li class="products-list">
+  				<li class="products-list application-item">
   					<h3 class="products-list-title">Приложения</h3>
   					<img src="img/advantage-picture-green.png" alt="телефон" width="300" height="146">
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a class="button" href="#"><span>Заказать</span></a>
+  					<a class="button button-order order-application" href="#"><span>Заказать</span></a>
   				</li>
-  				<li class="products-list">
+  				<li class="products-list presentation-item">
   					<h3 class="products-list-title">Презентации</h3>
   					<img src="img/advantage-picture-yellow.png" alt="экран" width="300" height="146">
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="button" href="#"><span>Заказать</span></a>
+  					<a class="button button-order order-presentation" href="#"><span>Заказать</span></a>
   				</li>
   			</ul>
   		</section>
   		<section class="advertise">
-  			<h2 class="visually-hidden">О нас</h2>
+  			<!--<h2 class="visually-hidden">О нас</h2>-->
         <div>
           <p class="advertise-subject">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="advertise-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -87,7 +87,7 @@
   			</div>
   		</section>
   		<section class="partners">
-        <h2 class="visually-hidden">Наши партнёры</h2>
+        <!--<h2 class="visually-hidden">Наши партнёры</h2>-->
   			<ul class="list-global partners-list">
   				<li><img class="partners-logo" src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="199" height="68"></li>
   				<li><img class="partners-logo" src="img/borodinski-logo.jpg" alt="Barbershop Borodinski" width="209" height="90"></li>
@@ -99,12 +99,14 @@
   	</main>
   	<footer class="lg-footer-map">
       <div class="container-map">
-  			<h2 class="visually-hidden">Как нас найти</h2>
-  			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="1440" height="416"></p>
-  			<h2 class="visually-hidden">Как с нами связаться</h2>
-        <h3 class="address-heading">nёrds design studio</h3>
-  			<address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></address>
-  			<button class="button" type="button">Напишите нам</button>
+  			<!--<h2 class="visually-hidden">Как нас найти</h2>-->
+  			<p><img src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="100%"></p>
+  			<div class="address-contacts">
+          <!--<h2 class="visually-hidden">Как с нами связаться</h2>-->
+          <h3 class="address-heading">nёrds design studio</h3>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a class="telephone-number" href="tel:+78122757575">+7 (812) 275-75-75</a></address>
+          <button class="button button-message" type="button">Напишите нам</button>
+        </div>
       </div>
   	</footer>
     <footer class="lg-footer-social">
@@ -129,15 +131,15 @@
       </div>
     </footer>
     <section class="lg-feedback">
-      <div class="container">
-        <h2 class="visually-hidden">Форма для отправки обратной связи</h2>
+      <div class="container-send-message">
+        <!--<h2 class="visually-hidden">Форма для отправки обратной связи</h2>-->
           <form class="modal" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <legend>Напишите нам</legend>
-                <p><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия"></label></p>
-                <p><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
-                <p><label class="modal-label">Текст письма:<input class="modal-feedback-form" type="text" name="letter" placeholder="В свободной форме"></label></p>
-                <button class="button" type="button">Отправить</button>
+            <fieldset class="send-message">
+              <legend class="send-message-legend">Напишите нам</legend>
+                <p class="send-message-name"><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия" ></label></p>
+                <p class="send-message-email"><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
+                <p class="send-message-text"><label class="modal-label">Текст письма:<textarea class="modal-feedback-form" name="letter" rows="5" cols="70">В свободной форме</textarea></label></p>
+                <button class="button button-message-send" type="button">Отправить</button>
             </fieldset>
           </form>
       </div>
