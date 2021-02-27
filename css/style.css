@@ -226,6 +226,15 @@ img {
   opacity: 1;
 }
 
+.button-buy {
+  padding: 17px 72px 15px 72px;
+}
+.template-container-item {
+  padding: 26px 53px 44px 52px;
+  background-color: var(--basic-grey);
+  box-sizing: border-box;
+}
+
 /* footer */
 .container-map {
   position: relative;
@@ -240,6 +249,7 @@ img {
   width: 230px;
   padding: 49px 39px 47px 50px;
   background-color: var(--basic-white);
+  outline: solid var(--button-yellow-hover);
 }
 
 
@@ -312,11 +322,7 @@ img {
   margin: 0 auto;
   min-width: 1160px;
 }
-/* .container-map {
-  width: 1440px;
-  margin: 0 auto;
-  min-width: 1440px;
-} */
+
 .lg {
   display: grid;
   grid-template-areas:
@@ -391,19 +397,14 @@ img {
   font-size: 45px;
   line-height: 53px;
 }
-.template-store ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
+
 /* grid catalog */
 .lg-main-catalog {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "heading heading"
-    "filter order"
-    "- templates"
+    "filter templates";
 }
 .main-heading {
   grid-area: heading;
@@ -417,6 +418,49 @@ img {
 .template-store {
   grid-area: templates;
 }
+
+.template-store ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.filter-choose {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.filter-form-adjust {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.template-store-item {
+  display: grid;
+  height: 618px;
+  grid-template-columns: 360px;
+  grid-template-rows: 40px 347px 231px;
+  outline: solid var(--button-yellow-hover);
+}
+.template-pic {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  z-index: 1;
+  outline: dashed var(--button-green-click);
+}
+.template-pic:hover {
+  z-index: 0;
+}
+.template-container-item {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  z-index: 1;
+  outline: dotted var(--button-red-click);
+}
+.template-container-item:hover {
+  z-index: 2;
+}
+
 /* additional */
 .visually-hidden  {
   position: absolute;
@@ -444,7 +488,7 @@ img {
         Потому-что по вёрстке идут друг за другом, а потом идет список товаров. Как лучше расставить? Может поменять немного вёрстку?
  */
 /* Внутри карты сделать контейнер, чтобы адрес был в сетке остальной.
-Убрать отсутпы у списков на главной
+Убрать отсупы у списков на главной
 В каталоге фильтры слева- тег aside. Фильтры над шаблонами переложить в блок с шаблонами.
 Кнопки пагинации сделать флексом, в грид их не вносить.
 Главная: контейнер-центровщик для адреса сделать relative, а у карты отменить relative.
@@ -452,3 +496,7 @@ img {
 display: none или opacity 0 для карточек.
 элементу с ценой в карточке задать border-box.
  */
+/* Вопросы по 5ому заданию. Каталог.
+1) Карточки товаров если не задавать им точную высоту становятся больше чем нужно. Почему так? Их размер складывается из всех
+элементов, что в них находятся+padding+border?
+*/
