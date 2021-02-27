@@ -249,7 +249,6 @@ img {
   width: 230px;
   padding: 49px 39px 47px 50px;
   background-color: var(--basic-white);
-  outline: solid var(--button-yellow-hover);
 }
 
 
@@ -440,13 +439,13 @@ img {
   height: 618px;
   grid-template-columns: 360px;
   grid-template-rows: 40px 347px 231px;
-  outline: solid var(--button-yellow-hover);
+
 }
 .template-pic {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
   z-index: 1;
-  outline: dashed var(--button-green-click);
+
 }
 .template-pic:hover {
   z-index: 0;
@@ -455,7 +454,7 @@ img {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   z-index: 1;
-  outline: dotted var(--button-red-click);
+
 }
 .template-container-item:hover {
   z-index: 2;
