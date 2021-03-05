@@ -13,18 +13,20 @@
   <body class="lg">
   	<header class="main-header lg-header">
       <div class="container">
-        <nav class="lg-main-navigation">
-          <a href="#">
-            <img class="logo" src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
-          </a>
-          <ul class="site-navigation list-global">
-            <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-            <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-            <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-          </ul>
-          <ul class="site-navigation list-global">
-            <li><a class="site-navigation-link" href="blank.html">Корзина</a></li>
+        <nav class="lg-main-navigation flex-main-navigation">
+          <div class="site-navigation">
+            <a href="#">
+              <img class="logo" src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
+            </a>
+            <ul class="list-global site-navigation-list">
+              <li><a class="navigation-link site-navigation-link" href="blank.html">Студия</a></li>
+              <li><a class="navigation-link site-navigation-link" href="blank.html">Клиенты</a></li>
+              <li><a class="navigation-link site-navigation-link" href="catalog.html">Магазин</a></li>
+              <li><a class="navigation-link site-navigation-link" href="blank.html">Контакты</a></li>
+            </ul>
+          </div>
+          <ul class="user-navigation list-global">
+            <li><a class="navigation-link user-navigation-link" href="blank.html">Корзина</a></li>
           </ul>
         </nav>
       </div>
@@ -45,20 +47,20 @@
   			<h2 class="visually-hidden">Что мы создаём</h2>
   			<ul class="list-global products">
   				<li class="products-list website-item">
-  					<h3 class="products-list-title">Веб-сайты</h3>
-  					<img src="img/advantage-picture-red.png" alt="ноутбук" width="300" height="146">
+  					<img class="products-img" src="img/advantage-picture-red.png" alt="ноутбук" width="300" height="146">
+            <h3 class="products-list-title">Веб-сайты</h3>
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-order order-website" href="#"><span>Заказать</span></a>
   				</li>
   				<li class="products-list application-item">
-  					<h3 class="products-list-title">Приложения</h3>
   					<img src="img/advantage-picture-green.png" alt="телефон" width="300" height="146">
+            <h3 class="products-list-title">Приложения</h3>
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
   					<a class="button button-order order-application" href="#"><span>Заказать</span></a>
   				</li>
   				<li class="products-list presentation-item">
-  					<h3 class="products-list-title">Презентации</h3>
   					<img src="img/advantage-picture-yellow.png" alt="экран" width="300" height="146">
+            <h3 class="products-list-title">Презентации</h3>
   					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
   					<a class="button button-order order-presentation" href="#"><span>Заказать</span></a>
   				</li>
@@ -78,7 +80,7 @@
         </div>
   			<div>
   				<img src="img/nerds-picture.jpg" alt="Цветное лого Нёрдс" width="360" height="208" >
-  				<h3>с 2004 года Любим точность во всем:</h3>
+  				<h3>с 2004 года любим точность во всем:</h3>
   				<ul class="list-global">
   					<li><p><span >146</span><sup >%</sup>Уровень самоотдачи</p></li>
   					<li><p><span>100</span><sup>%</sup>Соблюдение сроков</p></li>
