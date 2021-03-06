@@ -11,24 +11,26 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="lg">
-      <header class="main-header lg-header">
-        <div class="container">
-          <nav class="lg-main-navigation">
-            <a href="index.html">
-              <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
-            </a>
-            <ul class="site-navigation list-global">
-              <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-              <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-              <li><a class="site-navigation-link" href="#">Магазин</a></li>
-              <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-            </ul>
-            <ul class="site-navigation list-global">
-              <li><a class="site-navigation-link" href="blank.html">Корзина</a></li>
-            </ul>
-          </nav>
+  <header class="main-header lg-header">
+    <div class="container">
+      <nav class="lg-main-navigation flex-main-navigation">
+        <div class="site-navigation">
+          <a href="index.html">
+            <img class="logo" src="img/svg-nerds/nerds-logo.svg" alt="Логотип Nerd's" width="160" height="65">
+          </a>
+          <ul class="list-global site-navigation-list">
+            <li><a class="navigation-link site-navigation-link" href="blank.html">Студия</a></li>
+            <li><a class="navigation-link site-navigation-link" href="blank.html">Клиенты</a></li>
+            <li><a class="navigation-link site-navigation-link" href="#">Магазин</a></li>
+            <li><a class="navigation-link site-navigation-link" href="blank.html">Контакты</a></li>
+          </ul>
         </div>
-      </header>
+        <ul class="user-navigation list-global">
+          <li><a class="navigation-link user-navigation-link" href="blank.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
       <main class="lg-main">
         <div class="container lg-main-catalog">
           <h1 class="main-heading">Магазин готовых шаблонов</h1>
@@ -54,30 +56,28 @@
                 <label class="filter-label" for="filter-basket"><input class="filter-input" type="checkbox" name="basket" id="filter-basket">Корзина</label>
 
               </fieldset>
-              <button class="control" type="submit">Показать</button>
+              <button class="control control-next" type="submit">Показать</button>
             </form>
           </aside>
           <section class="template-store">
             <h2 class="visually-hidden">Список шаблонов</h2>
             <form class="filter filter-order">
-              <fieldset class="filter">
-                <legend class="filter-legend">Сортировать:</legend>
-                <div>
-                  <button class="control control-order" type="button" id="filter-price" name="sorting">По цене</button>
-                  <button class="control control-order" type="button" id="filter-type" name="sorting" >По типу</button>
-                  <button class="control control-order" type="button" id="filter-name" name="sorting" >По названию</button>
-                </div>
-                <div>
-                  <button class="control control-order" type="button" id="filter-descend" name="descend">
+              <fieldset class="filter filter-sorting">
+                <h3 class="filter-legend filter-sorting-legend">Сортировать:</h3>
+                <div class="filter-sorting-buttons">
+                  <button class="control-order" type="button" id="filter-price" name="sorting">По цене</button>
+                  <button class="control-order" type="button" id="filter-type" name="sorting" >По типу</button>
+                  <button class="control-order" type="button" id="filter-name" name="sorting" >По названию</button>
+                  <button class="control-order" type="button" id="filter-descend" name="descend">
                     <img src="img/svg-nerds/icon-down-dir.svg" alt='&#9660;'>
                   </button>
-                  <button class="control control-order" type="button" id="filter-ascend" name="ascend">
+                  <button class="control-order" type="button" id="filter-ascend" name="ascend">
                     <img src="img/svg-nerds/icon-up-dir.svg" alt='&#9650;'>
                   </button>
                 </div>
               </fieldset>
             </form>
-            <ul class="list-global ">
+            <ul class="list-global template-store-list">
               <li class="template-store-item sedona">
                 <div class="template-container-item">
                   <h3 class="template-name">Sedona</h3>
@@ -134,7 +134,7 @@
             <button class="control control-disable" type="button" disabled>1</button>
             <button class="control" type="button">2</button>
             <button class="control" type="button">3</button>
-            <button class="control" type="button">Следующая</button>
+            <button class="control control-next" type="button">Следующая</button>
           </div>
         </div>
       </main>
@@ -151,26 +151,26 @@
         </div>
       </footer>
       <footer class="lg-footer-social">
-        <div class="container">
-          <div class="lg-footer-social-box">
-            <ul class="list-global social-button">
-              <li class="social-button-item">
-                <a  href="https://vk.com"><img class="social-button-logo" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26" height="15"></a>
-              </li>
-              <li class="social-button-item">
-                <a  href="https://facebook.com"><img class="social-button-logo" src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12" height="22"></a>
-              </li>
-              <li class="social-button-item">
-                <a  href="https://instagram.com"><img class="social-button-logo" src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21" height="21"></a>
-              </li>
-            </ul>
-            <div class="footer-proposal-box">
-              <p class="footer-proposal">Давайте дружить, это выгодно!</p>
-              <p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-          </div>
+    <div class="container">
+      <div class="lg-footer-social-box">
+        <ul class="list-global social-button">
+          <li class="social-button-item">
+            <a class="social-button-link" href="https://vk.com"><img class="social-button-logo" src="img/svg-nerds/vk-icon.svg" alt="vk.com" width="26" height="15"></a>
+          </li>
+          <li class="social-button-item">
+            <a class="social-button-link" href="https://facebook.com"><img class="social-button-logo" src="img/svg-nerds/fb-icon.svg" alt="facebook.com" width="12" height="22"></a>
+          </li>
+          <li class="social-button-item">
+            <a class="social-button-link" href="https://instagram.com"><img class="social-button-logo" src="img/svg-nerds/insta-icon.svg" alt="instagram.com" width="21" height="21"></a>
+          </li>
+        </ul>
+        <div class="footer-proposal-box">
+          <p class="footer-proposal">Давайте дружить, это выгодно!</p>
+          <p class="footer-proposal-benefit">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
       <section class="lg-feedback">
         <div class="container-send-message">
           <h2 class="visually-hidden">Форма для отправки обратной связи</h2>

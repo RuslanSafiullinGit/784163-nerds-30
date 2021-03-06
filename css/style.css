@@ -217,7 +217,10 @@ img {
   background-color: var(--basic-grey);
   text-transform: uppercase;
   border-radius: 3px;
+  font-weight: 500;
   border: none;
+  width: 50px;
+  height: 50px;
 }
 .control:hover {
   background-color: var(--button-control-hover);
@@ -225,12 +228,15 @@ img {
 .control:active {
   background-color: var(--button-control-click);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-
+  opacity: 0.3;
 }
 .control-disable {
   background-color: var(--button-control-focus);
 }
-
+.control-next {
+  width: 260px;
+  height: 50px;
+}
 .filter {
   border: none;
   font-size: 16px;
@@ -248,12 +254,33 @@ img {
 .control-order {
   color: var(--basic-extra-black);
   opacity: 0.3;
+  list-style: none;
 }
 .control-order:hover {
   opacity: 0.6;
 }
 .control-order:active {
   opacity: 1;
+}
+
+.filter-sorting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.filter-sorting-legend {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.filter-sorting-buttons {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: none;
+}
+.flex-pagination {
+
 }
 
 /* footer */
@@ -283,9 +310,12 @@ img {
   line-height: 22px;
 }
 .social-button {
+  display: flex;
+  flex-wrap: wrap;
+  width: 261px;
   padding-left: 0;
 }
-.social-button-item {
+.social-button-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,11 +324,12 @@ img {
   height: 81px;
   border-radius: 50%;
 }
-.social-button-item:hover {
+
+.social-button-link:hover {
   background-color: var(--button-red-hover);
 
 }
-.social-button-item:active {
+.social-button-link:active {
   background-color: var(--button-red-click);
 }
 .social-button-logo {
@@ -443,7 +474,8 @@ img {
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "heading heading"
-    "filter templates";
+    "filter templates"
+    ". pagination";
 }
 .main-heading {
   grid-area: heading;
@@ -457,7 +489,9 @@ img {
 .template-store {
   grid-area: templates;
 }
-
+.pagination{
+  grid-area: pagination;
+}
 .template-store ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -474,11 +508,13 @@ img {
   grid-template-columns: 1fr;
   gap: 10px;
 }
+.template-store-list {
+  padding-left: 0;
+}
 .template-store-item {
   display: grid;
   grid-template-columns: 360px;
   grid-template-rows: 1fr;
-
 }
 .template-pic {
   grid-row: 1 / 2;
@@ -545,7 +581,6 @@ img {
         Потому-что по вёрстке идут друг за другом, а потом идет список товаров. Как лучше расставить? Может поменять немного вёрстку?
  */
 /* Внутри карты сделать контейнер, чтобы адрес был в сетке остальной.
-Убрать отсупы у списков на главной
 В каталоге фильтры слева- тег aside. Фильтры над шаблонами переложить в блок с шаблонами.
 Кнопки пагинации сделать флексом, в грид их не вносить.
 Главная: контейнер-центровщик для адреса сделать relative, а у карты отменить relative.
@@ -553,7 +588,8 @@ img {
 display: none или opacity 0 для карточек.
 элементу с ценой в карточке задать border-box.
  */
-/* Вопросы по 5ому заданию. Каталог.
-1) Карточки товаров если не задавать им точную высоту становятся больше чем нужно. Почему так? Их размер складывается из всех
-элементов, что в них находятся+padding+border?
+/*
+  Социальные кнопки. Наведение, активность и проч. не работает как надо. Иконки соц.сетей меняют цвет навести на них,
+  если навести на фон - то не меняют. Ссылкой ранее являлись только иконки, теперь ссылкой являетя вся область с красным фоном.
+  Как изменить поведение наведения и нажатия, что цвет менялся и у фона и у иконки?
 */
