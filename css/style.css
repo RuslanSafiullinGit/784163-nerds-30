@@ -255,24 +255,23 @@ img {
   color: var(--basic-extra-black);
   opacity: 0.3;
   border: none;
-  background-color: none;
+  background-color: transparent;
   outline: none;
 }
 .control-order:hover {
   opacity: 0.6;
   border: none;
-  background-color: none;
-  outline: none;
+  background-color: transparent;
 }
 .control-order:active {
   opacity: 1;
   border: none;
-  background-color: none;
+  background-color: transparent;
   outline: none;
 }
 .control-order:focus {
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 .filter-sorting {
   display: grid;
