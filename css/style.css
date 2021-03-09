@@ -254,15 +254,26 @@ img {
 .control-order {
   color: var(--basic-extra-black);
   opacity: 0.3;
-  list-style: none;
+  border: none;
+  background-color: none;
+  outline: none;
 }
 .control-order:hover {
   opacity: 0.6;
+  border: none;
+  background-color: none;
+  outline: none;
 }
 .control-order:active {
   opacity: 1;
+  border: none;
+  background-color: none;
+  outline: none;
 }
-
+.control-order:focus {
+  border: none;
+  background-color: none;
+}
 .filter-sorting {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -278,9 +289,6 @@ img {
   margin-top: auto;
   margin-bottom: auto;
   background: none;
-}
-.flex-pagination {
-
 }
 
 /* footer */
