@@ -43,18 +43,25 @@
               </fieldset>
               <fieldset class="filter filter-form-adjust">
                 <legend class="filter-legend">Сетка:</legend>
-                <label class="filter-label" for="filter-adaptive"><input class="filter-input" type="radio" id="filter-adaptive"  name="net-type" value="adaptive" checked>Адаптивная</label>
-                <label class="filter-label" for="filter-fixed"><input class="filter-input" type="radio" id="filter-fixed" name="net-type" value="fixed">Фиксированная</label>
-                <label class="filter-label" for="filter-rubbery"><input class="filter-input" type="radio" id="filter-rubbery" name="net-type" value="rubbery">Резиновая</label>
+                <input class="filter-input-radio visually-hidden" type="radio" id="filter-adaptive"  name="net-type" value="adaptive" checked>
+                <label class="filter-label" for="filter-adaptive">Адаптивная</label>
+                <input class="filter-input-radio visually-hidden" type="radio" id="filter-fixed" name="net-type" value="fixed">
+                <label class="filter-label" for="filter-fixed">Фиксированная</label>
+                <input class="filter-input-radio visually-hidden" type="radio" id="filter-rubbery" name="net-type" value="rubbery">
+                <label class="filter-label" for="filter-rubbery">Резиновая</label>
               </fieldset>
               <fieldset class="filter filter-form-adjust">
                 <legend class="filter-legend">Особенности:</legend>
-                <label class="filter-label" for="filter-slider"><input class="filter-input" type="checkbox" name="slider" id="filter-slider" checked>Слайдер</label>
-                <label class="filter-label" for="filter-advantages-block"><input class="filter-input" type="checkbox" name="advantages-block" id="filter-advantages-block">Блок преимуществ</label>
-                <label class="filter-label" for="filter-news"><input class="filter-input" type="checkbox" name="news" id="filter-news" checked>Новости</label>
-                <label class="filter-label" for="filter-gallery"><input class="filter-input" type="checkbox" name="gallery" id="filter-gallery">Галерея</label>
-                <label class="filter-label" for="filter-basket"><input class="filter-input" type="checkbox" name="basket" id="filter-basket">Корзина</label>
-
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                <label class="filter-label" for="filter-slider">Слайдер</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages-block" id="filter-advantages-block">
+                <label class="filter-label" for="filter-advantages-block">Блок преимуществ</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                <label class="filter-label" for="filter-news">Новости</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+                <label class="filter-label" for="filter-gallery">Галерея</label>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
+                <label class="filter-label" for="filter-basket">Корзина</label>
               </fieldset>
               <button class="control control-next" type="submit">Показать</button>
             </form>

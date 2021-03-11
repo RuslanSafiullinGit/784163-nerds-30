@@ -24,6 +24,8 @@
    --button-yellow-dormancy: #EFC849;
    --button-yellow-hover: #EAB534;
    --button-yellow-click: #E5A722;
+   --input-button: #4D4D4D;
+
 }
 
 /* Global */
@@ -125,6 +127,13 @@ img {
 }
 .user-navigation {
   margin-left: 246px;
+  position: relative;
+}
+.user-navigation-link::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  background: url("//img/svg-nerds/cart-icon.svg");
 }
 .site-navigation-list {
   display: flex;
@@ -206,8 +215,43 @@ img {
 .order-presentation:active {
   background-color: var(--button-yellow-click);
 }
-
-
+.features {
+  width: 360px;
+  min-height: 411px;
+  outline: solid 2px #444444;
+}
+.features img {
+  outline: solid 2px #E5A722;
+}
+.features h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  outline: solid 2px #D7373B;
+}
+.list-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  outline: solid 2px #00AA62;
+}
+.list-features-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features-value {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+.features-value sup {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+.features-description {
+  line-height: 18px;
+}
 /* catalog */
 .main-heading {
   text-align: center;
@@ -238,18 +282,46 @@ img {
   height: 50px;
 }
 .filter {
-  border: none;
+  /* border: none; */
   font-size: 16px;
   line-height: 20px;
 }
-
 .filter-legend {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
-.filter-input {
+.filter-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  left: 23px;
 
+}
+.filter-input-checkbox + .filter-label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  /*
+  border: solid 3px var(--input-button); */
+  background-image: url("//img/svg-nerds/checkbox-off.svg");
+  opacity: 0.4;
+  top: 0;
+  left: -36px;
+}
+.filter-input-radio + .filter-label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border: solid 3px var(--input-button);
+  opacity: 0.4;
+  top: 0;
+  top: 0;
+  left: -36px;
+  border-radius: 50%;
 }
 .control-order {
   color: var(--basic-extra-black);
@@ -334,18 +406,14 @@ img {
 
 .social-button-link:hover {
   background-color: var(--button-red-hover);
-
 }
 .social-button-link:active {
   background-color: var(--button-red-click);
 }
-.social-button-logo {
-  display: block;
-  margin: auto;
+.social-button-link:active  path {
+  fill-opacity: 0.3;
 }
-.social-button-logo:active {
-  opacity: 0.3;
-}
+
 .modal-label {
   color: var(--basic-extra-black);
   font-weight: 700;
@@ -572,31 +640,3 @@ img {
 .container-send-message {
   display: none;
 }
-/*
-    1) Не понятно, как измерить расстоние в блоке с адресом между строками и от правого края текста до правого края
-        его белого фона.
-    2) У социальных кнопок ссылкой является только сама картинка, а не фон(исправлю сам, просто напоминалка)
-    3) Форма "Напишите нам". Подсказка в текстовом поле не исчезает, когда в форме начинаешь что-нибудь печатать.
-    4) Как лучше быть с формой? Задать размер контейнеру? Или задать padding форме вложенной в контейнер(сделаю сам)
-    5) Из-за грида расплылся .button-message-send. Как вернуть в норму? Я могу обернуть его в div, но мне кажется, что слишком много контейнеров
-    6) Как переместить label'ы для message-send? (нашёл в учебнике академии, попробую сделать сам)
-    7) Зачем оборочивать крупные блоки в div class="container", почему нельзя самим смысловым блокам задать класс
-        container и отцентровать относительно body? (ответ: это не обязательно, но так бывает удобнее для вёрстки)
-    8) Грид каким-то образом поломал стилизацию visually hidden и теперь скрытые заголовки видны. Как их спрятать обратно?
-        Сейчас все заголовки закомментировал в HTML(была какая-то бага)
-    9) В каталоге в main сетка не строится.  Фильтр выбора(стоимость, сетка, особенности) и фильтр сортировки не встают ровно в грид.
-        Потому-что по вёрстке идут друг за другом, а потом идет список товаров. Как лучше расставить? Может поменять немного вёрстку?
- */
-/* Внутри карты сделать контейнер, чтобы адрес был в сетке остальной.
-В каталоге фильтры слева- тег aside. Фильтры над шаблонами переложить в блок с шаблонами.
-Кнопки пагинации сделать флексом, в грид их не вносить.
-Главная: контейнер-центровщик для адреса сделать relative, а у карты отменить relative.
-Убрать карту из <p>
-display: none или opacity 0 для карточек.
-элементу с ценой в карточке задать border-box.
- */
-/*
-  Социальные кнопки. Наведение, активность и проч. не работает как надо. Иконки соц.сетей меняют цвет навести на них,
-  если навести на фон - то не меняют. Ссылкой ранее являлись только иконки, теперь ссылкой являетя вся область с красным фоном.
-  Как изменить поведение наведения и нажатия, что цвет менялся и у фона и у иконки?
-*/
