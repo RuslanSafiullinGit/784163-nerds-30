@@ -10,6 +10,7 @@
    --link-hover: #FB565A;
    --link-active: #000000;
    --extra-text-color: #FFFFFF;
+   --additional-grey: #C1C1C1;
 
    --button-red-dormancy: #FB565A;
    --button-red-hover: #E74246;
@@ -133,8 +134,13 @@ img {
 .user-navigation-link::before {
   content: "";
   position: absolute;
-  left: -10px;
-  background: url("//img/svg-nerds/cart-icon.svg");
+  display: block;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 7px;
+  background-image: url("../img/svg-nerds/cart-icon.svg");
+  background-repeat: no-repeat;
 }
 .site-navigation-list {
   display: flex;
@@ -146,7 +152,32 @@ img {
 .site-navigation-link {
   margin-right: 45px;
 }
-
+.slider {
+  position: relative;
+}
+.slider-controls {
+  min-width: 88px;
+  position: absolute;
+  left: 139px;
+  top: 317px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-button {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+}
+.current-slide-button {
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-white);
+  border: solid 2px var(--additional-grey);
+  border-radius: 50%;
+  padding: 5px;
+}
 .advertise-subject {
   font-weight: 500;
   font-size: 45px;
@@ -188,7 +219,6 @@ img {
   display: inline-block;
   padding: 17px 54px 15px 54px;
 }
-
 .button-message {
   display: inline-block;
   padding: 17px 44px 15px 44px;
@@ -219,21 +249,15 @@ img {
 .features {
   width: 360px;
   min-height: 411px;
-  outline: solid 2px #444444;
-}
-.features img {
-  outline: solid 2px #E5A722;
 }
 .features h3 {
   text-transform: uppercase;
   font-size: 16px;
-  outline: solid 2px #D7373B;
 }
 .list-features {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  outline: solid 2px #00AA62;
 }
 .list-features-item {
   display: flex;
@@ -444,13 +468,13 @@ img {
   font-family: inherit;
   font-size: inherit;
 }
+
 /* footer */
 
 .container-map {
   position: relative;
 
 }
-
 .address-contacts {
   display: inline-block;
   position: absolute;
@@ -556,6 +580,7 @@ img {
   margin-top: 50px;
 }
 .advantages {
+  background-color: var(--basic-grey);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
@@ -564,11 +589,6 @@ img {
   margin-bottom: 80px;
 }
 .products {
- /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding-left: 0;
-  */
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -583,7 +603,6 @@ img {
   min-height: 347px;
   margin-right: 100px;
 }
-
 .advertise {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -600,6 +619,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+
 /*
 .lg-main-navigation {
   display: grid;
