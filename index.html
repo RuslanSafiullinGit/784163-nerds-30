@@ -44,7 +44,7 @@
         <div class="slider">
   				<img src="img/nerds-index-slide1.png" alt="летящие айфоны" width="760" height="431">
           <div class="slider-controls">
-            <button type="button" class="current-slide-button" aria-label="Первый слайд"></button>
+            <button type="button" class="slide-button current-slide-button" aria-label="Первый слайд"></button>
             <button type="button" class="slide-button" aria-label="Второй слайд"></button>
             <button type="button" class="slide-button" aria-label="Третий слайд"></button>
           </div>
@@ -108,17 +108,20 @@
   	</main>
   	<footer class="lg-footer-map">
       <div class="container-map">
-  			<h2 class="visually-hidden">Как нас найти</h2>
-  			<img src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="100%">
-          <div class="address-contacts">
-            <h2 class="visually-hidden">Как с нами связаться</h2>
-            <h3 class="address-heading">nёrds design studio</h3>
-            <address class="address-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.
-              <a class="telephone-number" href="tel:+78122757575">+7 (812) 275-75-75</a>
-            </address>
-            <button class="button button-message" type="button">Напишите нам</button>
-          </div>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <img class="saintp-map" src="img/map-picture.png" alt="Карта Санкт-Петербурга" width="100%">
       </div>
+      <div class="container-address-contacts">
+        <div class="address-contacts">
+          <h2 class="visually-hidden">Как с нами связаться</h2>
+          <h3 class="address-heading">nёrds design studio</h3>
+          <address class="address-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.
+            <a class="telephone-number" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </address>
+        <button class="button button-message" type="button">Напишите нам</button>
+      </div>
+      </div>
+
   	</footer>
     <footer class="lg-footer-social">
       <div class="container">
@@ -162,10 +165,10 @@
         <h2 class="visually-hidden">Форма для отправки обратной связи</h2>
           <form class="modal" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="send-message">
-              <legend class="send-message-legend">Напишите нам</legend>
-                <p class="send-message-name"><label class="modal-label">Ваше имя:<input class="modal-feedback-form" type="text" name="customername" placeholder="Имя Фамилия" ></label></p>
-                <p class="send-message-email"><label class="modal-label">Ваш email:<input class="modal-feedback-form" type="email" name="email" placeholder="email@example.com"></label></p>
-                <p class="send-message-text"><label class="modal-label">Текст письма:<textarea class="modal-feedback-form" name="letter" rows="5" cols="70">В свободной форме</textarea></label></p>
+              <h3 class="send-message-legend">Напишите нам</h3>
+                <div class="send-message-name"><label class="modal-label" for="customername">Ваше имя:</label><input class="modal-feedback-form modal-feedback-input" type="text" id="customername" name="customername" placeholder="Имя Фамилия"></div>
+                <div class="send-message-email"><label class="modal-label" for="email">Ваш email:</label><input class="modal-feedback-form modal-feedback-input" type="email" id="email" name="email" placeholder="email@example.com"></div>
+                <div class="send-message-text"><label class="modal-label" for="letter">Текст письма:</label><textarea class="modal-feedback-form modal-feedback-textarea" name="letter" rows="5" cols="70" id="letter">В свободной форме</textarea></div>
                 <button class="button button-message-send" type="button">Отправить</button>
             </fieldset>
           </form>
