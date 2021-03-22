@@ -5,6 +5,7 @@
    --basic-extra-black: #000000;
    --basic-grey: #EEEEEE;
    --extra-grey: #E1E1E1;
+   --additional-grey: #666666;;
    --basic-white: #FFFFFF;
    --link-dormancy: #000000;
    --link-hover: #FB565A;
@@ -229,11 +230,11 @@ img {
   font-size: 45px;
   line-height: 45px;
   margin-top: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 .advertise-text {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 .advertise-list-headline {
   font-weight: 700;
@@ -269,16 +270,23 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .address-location {
   display: inline-block;
+  margin-top: 3px;
   margin-bottom: 37px;
+  font-style: normal;
+  line-height: 18px;
+  color: var(--additional-grey);
 }
 .telephone-number {
   display: inline-block;
   padding-top: 18px;
+  color: var(--additional-grey);
+  text-decoration: none;
 }
 
 .button-advantages {
@@ -335,7 +343,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  padding-top: 17px;
+  padding-top: 15px;
 }
 .list-features-item {
   display: grid;
@@ -582,30 +590,38 @@ img {
   grid-column: 2 / 3;
   z-index: 1;
   align-self: center;
+  width: 319px;
+  min-height: 308px;
+  background-color: var(--basic-white);
+  padding-bottom: 10px;
 }
 .address-contacts {
-  /*position: absolute;*/
-  /*top: 50px;*/
-  /*left: 80px;*/
-  width: 230px;
-  padding: 49px 39px 47px 50px;
-  background-color: var(--basic-white);
-  outline: solid 1px black;
+  margin-left: 50px;
+  margin-top: 50px;
 }
+
 .footer-proposal {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  margin-top: 27px;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 .footer-proposal-benefit {
   font-size: 16px;
   line-height: 22px;
+  margin-left: 13px;
+  margin-top: 14px;
+
 }
 .social-button {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 261px;
-  padding-left: 0;
+  margin-top: 20px;
+
 }
 .social-button-link {
   display: flex;
@@ -683,9 +699,13 @@ img {
 }
 .lg-footer-map {
   grid-area: footer-map;
+  margin-top: 21px;
 }
 .lg-footer-social {
   grid-area: footer-social;
+  margin-top: 30px;
+  /*outline: 2px solid var(--button-green-dormancy);*/
+  /*outline-offset: 1px;*/
 }
 .lg-feedback {
   grid-area: feedback;
@@ -739,8 +759,8 @@ img {
 }
 .products-main {
   margin-right: -40px;
-  outline: 1px solid blue;
-  outline-offset: -1px;
+  /*outline: 1px solid blue;*/
+  /*outline-offset: -1px;*/
 }
 .products-main::after,
 .advertise::after,
@@ -757,7 +777,10 @@ img {
   margin-top: 80px;
 }
 .advertise::after {
-  margin-top: 74px;
+  margin-top: 50px;
+}
+.partners::after {
+  margin-top: 50px;
 }
 .products-list {
   width: 300px;
@@ -770,9 +793,9 @@ img {
   grid-template-rows: 1fr;
   justify-content: space-between;
   margin-top: 35px;
-  margin-bottom: 46px;
-  outline: 1px solid var(--input-button);
-  outline-offset: -1px;
+  margin-bottom: 30px;
+  /*outline: 1px solid var(--input-button);*/
+  /*outline-offset: -1px;*/
 }
 .advertise-about {
   grid-column: 1 / 2;
@@ -786,15 +809,17 @@ img {
   grid-row: 1 / 2;
 }
 .partners {
-  margin-bottom: 80px;
-  outline: 1px solid var(--button-yellow-hover);
-  outline-offset: -1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  /*outline: 2px solid var(--button-yellow-hover);*/
+  /*outline-offset: -1px;*/
 }
 .partners-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0;
-  padding: 0 0 44px 0;
+  padding: 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -802,6 +827,19 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.partners-list-item {
+  box-sizing: border-box;
+}
+.partners-list-item:nth-child(2) {
+  width: 209px;
+  margin-left: 28px;
+}
+.partners-list-item:nth-child(3) {
+  margin-left: 36px;
+}
+.partners-list-item:nth-child(4) {
+  margin-left: 25px;
 }
 .partners-logo {
   opacity: 0.2;
@@ -831,6 +869,8 @@ img {
   height: 590px;
   min-width: 960px;
   margin: 0 auto;
+  outline: none;
+  border: none;
 }
 .send-message {
   display: flex;
@@ -838,6 +878,8 @@ img {
   justify-content: space-between;
   padding: 63px 100px 84px 100px;
   margin: 0;
+  outline: none;
+  border: none;
 }
 .send-message-legend {
   width: 760px;
